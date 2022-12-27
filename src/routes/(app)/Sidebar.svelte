@@ -11,6 +11,6 @@
 	</svelte:fragment>
 	<slot />
 	<svelte:fragment slot="trail">
-		<AppRailTile label="Tile" title="Tile" value={1}>(icon)</AppRailTile>
+		<AppRailTile />
 	</svelte:fragment>
 </AppRail>

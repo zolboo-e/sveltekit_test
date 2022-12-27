@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { AppBar, AppRailTile, AppShell } from "@skeletonlabs/skeleton";
+	import { AppBar, AppRailTile, AppShell, LightSwitch } from "@skeletonlabs/skeleton";
 
 	import { page } from "$app/stores";
 
@@ -24,7 +24,9 @@
 		<AppBar>
 			<svelte:fragment slot="lead">(lead)</svelte:fragment>
 			(center)
-			<svelte:fragment slot="trail">(trail)</svelte:fragment>
+			<svelte:fragment slot="trail">
+				<LightSwitch />
+			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
 	<div class="container h-full mx-auto">
