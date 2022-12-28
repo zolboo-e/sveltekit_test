@@ -3,8 +3,8 @@
 	import { AppShell } from "@skeletonlabs/skeleton";
 
 	//
-	import AppBar from "./AppBar.svelte";
-	import SideBar from "./SideBar.svelte";
+	import AppBar from "./appbar.svelte";
+	import SideBar from "./sidebar.svelte";
 
 	//
 	import type { LayoutData } from "./$types";
