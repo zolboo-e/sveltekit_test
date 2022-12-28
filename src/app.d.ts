@@ -7,11 +7,10 @@ declare namespace App {
 		message: string;
 	}
 	interface Locals {
-		user: {
-			id: string;
-			name: string;
-		};
+		user?: import("$lib/types").User;
 	}
-	// interface PageData {}
+	interface PageData {
+		title?: string;
+	}
 	// interface Platform {}
 }

@@ -1,7 +1,8 @@
+//
 import type { PageLoad } from "./$types";
 
-export const load = (async () => {
+export const load: PageLoad = async () => {
 	return {
 		title: "Settings"
 	};
-}) satisfies PageLoad;
+};

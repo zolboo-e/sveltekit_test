@@ -1,10 +1,9 @@
+//
 import type { LayoutLoad } from "./$types";
 
-export const load = (async () => {
+export const load: LayoutLoad = async ({ data }) => {
 	return {
-		sections: [
-			{ slug: "/users", title: "Users" },
-			{ slug: "/settings", title: "Settings" }
-		]
+		user: data.user,
+		zolboo: ""
 	};
-}) satisfies LayoutLoad;
+};

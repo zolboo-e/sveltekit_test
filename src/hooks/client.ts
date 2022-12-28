@@ -1,6 +1,8 @@
 import type { HandleClientError } from "@sveltejs/kit";
 
-export const handleError = (({ error, event }) => {
+export const handleError: HandleClientError = ({ error, event }) => {
+	console.log("hooks/client.ts");
+
 	const errorId = crypto.randomUUID();
 	// example integration with https://sentry.io/
 	// Sentry.captureException(error, { event, errorId });
@@ -9,4 +11,4 @@ export const handleError = (({ error, event }) => {
 		code: "",
 		message: "Whoops!"
 	};
-}) satisfies HandleClientError;
+};

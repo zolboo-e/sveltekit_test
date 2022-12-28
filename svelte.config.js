@@ -12,7 +12,13 @@ const config = {
 			edge: false,
 			external: [],
 			split: false
-		})
+		}),
+		files: {
+			hooks: {
+				client: "src/hooks/client",
+				server: "src/hooks/server"
+			}
+		}
 	},
 	vitePlugin: {
 		experimental: {

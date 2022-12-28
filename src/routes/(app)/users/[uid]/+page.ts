@@ -1,7 +1,10 @@
+//
 import { error } from "@sveltejs/kit";
+
+//
 import type { PageLoad } from "./$types";
 
-export const load = (async ({ params }) => {
+export const load: PageLoad = async ({ params }) => {
 	if (params.uid === "1") {
 		return {
 			title: `User ${params.uid}`,
@@ -13,4 +16,4 @@ export const load = (async ({ params }) => {
 		code: "NOT_FOUND",
 		message: "Not found"
 	});
-}) satisfies PageLoad;
+};
