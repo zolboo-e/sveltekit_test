@@ -4,7 +4,7 @@
 
 	//
 	import AppBar from "./AppBar.svelte";
-	import Sidebar from "./SideBar.svelte";
+	import SideBar from "./SideBar.svelte";
 
 	//
 	import type { LayoutData } from "./$types";
@@ -14,7 +14,7 @@
 
 <AppShell>
 	<svelte:fragment slot="sidebarLeft">
-		<Sidebar />
+		<SideBar />
 	</svelte:fragment>
 	<svelte:fragment slot="pageHeader">
 		<AppBar {data} />
